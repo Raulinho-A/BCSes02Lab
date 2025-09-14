@@ -77,11 +77,11 @@
 	},
 	"sources": {
 		"contracts/6_Cripto.sol": {
-			"keccak256": "0xaaf9eb85ed890c58796409917fbb403672e03a3271d440f6533f040c7ac7be41",
+			"keccak256": "0xbfed80eccfb8fe0d1e54b3b4944231b4cbaa5dd21d29632f0a308c0532e3c68e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7d08cb9f9645176592f899a95e88bc83fe2901b8fe487e48a31bfed46c5c8a9e",
-				"dweb:/ipfs/QmTGynptFYe4CsNJExDFDD2cxw23YsS9hT9chrJt8M1DXo"
+				"bzz-raw://eb048487be9b6fd24730529eb008b5dd16430bcd31c89a18cbbd1f071776951b",
+				"dweb:/ipfs/QmUWvKjPVFEa9xTgrJRMpR8kAHSBGYjJjy5iWgcNSZMqbJ"
 			]
 		},
 		"hardhat/console.sol": {

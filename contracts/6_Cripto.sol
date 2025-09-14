@@ -22,6 +22,7 @@ contract Cripto {
     }
 
     // implementar mensaje desde String
+    // ejemplo para agregar alumnos desde deploy y un metodo mas para ingresar el indice, y retorne los datos del alumno
 
 
 }
