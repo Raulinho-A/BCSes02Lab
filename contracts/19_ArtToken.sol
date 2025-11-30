@@ -80,9 +80,30 @@ contract ArtToken is ERC721, Ownable {
         return artWorks;
     }
 
+    // function getArtWorksByOwner(address _owner) public view returns (Art[] memory) {
+    //     Art[] memory artWorks = new Art[](balanceOf(_owner));
+    //     uint256 count = 0;
+    //     for(uint256 i = 0; i < artWorks.length; i++) {
+    //         if(ownerOf(i) == _owner) {
+    //             artWorks[count] = art_works[i];
+    //             count ++;
+    //         }
+    //     }
+    //     return artWorks;
+    // }
+
     function createRandomArtWork(string memory _name) public payable {
         require(msg.value >= fee, "ERROR: No se alcanzo el pago minimo de fee");
         _createArtWork(_name);
     }    
 
+    function infoSmartContract() public view returns (address, uint256) {
+        address scAddress = address(this);
+        uint256 scMoney = scAddress.balance / (10 ** 18);
+        return (scAddress, scMoney);
+    }
+
+    function withdraw() external {
+        payable(owner()).transfer(address(this).balance);
+    }
 }
